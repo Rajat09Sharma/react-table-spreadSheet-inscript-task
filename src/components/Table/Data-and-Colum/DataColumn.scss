@@ -1,0 +1,24 @@
+.header-with-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 32px;
+    padding: 0 4px 0 8px;
+
+    .left-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+
+        svg {
+            color: #afafaf;
+            margin-right: 2px;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+}

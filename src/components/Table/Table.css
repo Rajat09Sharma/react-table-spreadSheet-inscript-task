@@ -1,0 +1,56 @@
+.table-container {
+  overflow-x: auto;
+  padding: 16px 48px 0 0;
+}
+
+.custom-table {
+  /* width: 100%; */
+  border-collapse: collapse;
+  table-layout: fixed; /* important for resizing and ellipsis */
+  font-family: Arial, sans-serif;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.cell-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 1px solid;
+}
+
+.cell-ellipsis:hover{
+  border-color: #6C8B70 !important;
+}
+
+.cell-ellipsis:focus{
+  border-color: #6C8B70 !important;
+
+}
+
+.resizable-header {
+  position: relative;
+  background-color: #eee;
+  color: #757575;
+}
+
+.resizer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  cursor: col-resize;
+  user-select: none;
+  touch-action: none;
+  background-color: transparent;
+}
+
+.resizer:hover {
+  background-color: #ccc;
+}
