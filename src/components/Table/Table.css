@@ -1,6 +1,6 @@
 .table-container {
   overflow-x: auto;
-  padding: 16px 48px 0 0;
+  /* padding: 16px 8px 0 0; */
 }
 
 .custom-table {
@@ -15,6 +15,18 @@
   padding: 8px 12px;
   border: 1px solid #ccc;
   text-align: left;
+}
+
+th:nth-child(7){
+  background-color: #E8F0E9;
+}
+
+th:nth-child(8),th:nth-child(9){
+  background-color: #EAE3FC;
+}
+
+th:nth-child(10){
+  background-color: #FFE9E0;
 }
 
 .cell-ellipsis {

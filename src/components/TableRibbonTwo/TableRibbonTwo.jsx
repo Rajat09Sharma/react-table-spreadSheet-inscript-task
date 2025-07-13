@@ -5,10 +5,10 @@ import {
     flexRender,
 } from '@tanstack/react-table';
 
-import "./Table.css";
+import "./TableRibbonTwo.scss";
 
 
-export const Table = ({ data, columns }) => {
+export const RibbonTableTwo = ({ data, columns }) => {
     const table = useReactTable({
         data,
         columns,
@@ -17,12 +17,12 @@ export const Table = ({ data, columns }) => {
     });
 
     return (
-        <div className='table-container'>
-            <table border="1" className='custom-table'>
+        <div className='ribbon-table-container'>
+            <table border="1" className="custom-table">
                 <thead>
                     {table.getHeaderGroups().map(headerGroup => (
                         <tr key={headerGroup.id}>
-                            {headerGroup.headers.map(header => (
+                            {headerGroup.headers.map(header => (   
                                 <th
                                     key={header.id}
                                     style={{
