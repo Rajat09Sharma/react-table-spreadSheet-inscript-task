@@ -43,19 +43,19 @@ export const TableRibbon = () => {
             </div>
 
             <div className="right-wrapper">
-                <div className="">
+                <div className="" onClick={() => handleClick("Import Clciked")}>
                     <LuArrowDownToLine />
                     <p>Import</p>
                 </div>
-                <div className="">
+                <div className="" onClick={() => handleClick("Export Clciked")}>
                     <LuArrowUpToLine />
                     <p>Export</p>
                 </div>
-                <div className="">
+                <div className="" onClick={() => handleClick("Share Clciked")}>
                     <FaRegShareSquare />
                     <p>Share</p>
                 </div>
-                <div className="big">
+                <div className="big" onClick={() => handleClick("New Action Clciked")}>
                     <PiArrowsSplitBold />
                     <p>New Action</p>
                 </div>

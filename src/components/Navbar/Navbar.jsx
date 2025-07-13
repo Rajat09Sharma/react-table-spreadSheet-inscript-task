@@ -5,8 +5,17 @@ import { CiSearch } from "react-icons/ci";
 import { FaCircleUser } from "react-icons/fa6";
 
 import "./Navbar.scss";
+import { useState } from "react";
 
 export const Navbar = () => {
+
+    const [searchTerm, setSearchTerm] = useState("");
+
+    const handleSearch = (e) => {
+        console.log(e.target.value);
+
+    }
+
     return (
         <div className="navbar">
             <div className="left-wrapper">
@@ -27,7 +36,7 @@ export const Navbar = () => {
                     <span>
                         <CiSearch size={20} />
                     </span>
-                    <input type="search" name="seach" placeholder="Search within sheet" className="search" />
+                    <input type="search" name="seach" value={searchTerm} onChange={handleSearch} placeholder="Search within sheet" className="search" />
                 </div>
 
                 <div className="bell-icon">
