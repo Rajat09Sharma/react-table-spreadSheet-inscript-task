@@ -52,7 +52,7 @@ This React project demonstrates a dynamic data table built using @tanstack/react
 
 1. Clone the repository
 
-git clone https://github.com/your-username/react-table-project.git
+git clone [https://github.com/your-username/react-table-project.git](https://github.com/Rajat09Sharma/react-table-spreadSheet-inscript-task/)
 cd react-table-project
 
 2. Install dependencies
